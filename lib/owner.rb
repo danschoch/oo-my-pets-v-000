@@ -37,7 +37,7 @@ class Owner
 
   def buy_fish(fish_name)
     self.pets.each do |pet_type, pet|
-      pet_type[pet] << fish_name if pet_type == :fishes
+      pet_type[pet] << Fish.new(fish_name) if pet_type == :fishes
     end
   end
 
