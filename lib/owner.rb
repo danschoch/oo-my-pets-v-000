@@ -32,12 +32,12 @@ class Owner
   end
 
   def pets
-    {fishes: [], dogs: [], cats:[]}
+    @pets = {fishes: [], dogs: [], cats:[]}
   end
 
   def buy_fish(fish_name)
     new_fish = Fish.new(fish_name)
-    self.pets[:fishes] << new_fish
+    @pets[:fishes] << new_fish
   end
 
 end
