@@ -32,13 +32,12 @@ class Owner
   end
 
   def pets
-    @pets = {fishes: [], dogs: [], cats:[]}
+    {fishes: [], dogs: [], cats:[]}
   end
 
   def buy_fish(fish_name)
-    self.pets.each do |pet_type, pet|
-      pet_type[pet] << Fish.new(fish_name) if pet_type == :fishes
-    end
+    new_fish = Fish.new(fish_name)
+    self.
   end
 
 end
