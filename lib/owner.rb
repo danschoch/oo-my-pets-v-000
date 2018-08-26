@@ -24,4 +24,6 @@ class Owner
 
   #Instance methods
   def species
+    @species
+  end
 end
