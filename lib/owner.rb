@@ -33,7 +33,10 @@ class Owner
 
   def pets
     {fishes: [], dogs: [], cats:[]}
+  end
 
+  def buy_fish(fish_name)
+    self.pets[fishes] = fish_name
   end
 
 end
