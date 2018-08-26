@@ -1,12 +1,15 @@
 class Owner
   attr_accessor :owner
+  attr_reader :species
   @@all = []
 
   def initialize(owner)
     @owner = owner
+    @species = "human"
     @@all << self
   end
 
+  #Class methods
   def self.all
     @@all
   end
@@ -18,4 +21,7 @@ class Owner
   def self.reset_all
     self.all.clear
   end
+
+  #Instance methods
+  def species
 end
